@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ronald Reoja — Front-End / React Developer</title>
+<meta name="description" content="Portfolio of Ronald Reoja, a 4th year BSIT student and front-end / React developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="mobile-bar">
+  <div class="id-card">
+    <div class="avatar"><img src="rj.jpg" alt="Ronald Reoja"></div>
+    <div>
+      <div class="name">RONALD REOJA</div>
+    </div>
+  </div>
+  <button class="burger" id="burgerBtn" aria-expanded="false" aria-controls="mobileTree">menu</button>
+</div>
+<nav class="mobile-tree" id="mobileTree">
+  <ul class="file-tree" id="mobileFileTree"></ul>
+</nav>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="id-card">
+      <div class="avatar"><img src="rj.jpg" alt="Ronald Reoja"></div>
+      <div>
+        <div class="name">RONALD REOJA</div>
+        <div class="role">front-end / react dev</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="tree-label">portfolio/</div>
+      <ul class="file-tree" id="desktopFileTree">
+        <li><a href="#hero" data-section="hero"><span class="dot"></span>hero.jsx</a></li>
+        <li><a href="#about" data-section="about"><span class="dot"></span>about.md</a></li>
+        <li><a href="#skills" data-section="skills"><span class="dot"></span>skills.json</a></li>
+        <li><a href="#projects" data-section="projects"><span class="dot"></span>projects/</a></li>
+        <li><a href="#objective" data-section="objective"><span class="dot"></span>objective.txt</a></li>
+        <li><a href="#contact" data-section="contact"><span class="dot"></span>contact.txt</a></li>
+        <li><a href="#github" data-section="github"><span class="dot"></span>github.txt</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-footer">
+      <a class="btn btn-primary btn-full" href="#" download>⬇ Download CV</a>
+      <a class="btn btn-ghost btn-full" href="#contact">Contact Me</a>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <div class="editor-tabs">
+      <span class="current">portfolio.html</span>
+      <a href="README.md" target="_blank" rel="noopener">readme.md</a>
+      <span>package.json</span>
+    </div>
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-kicker">$ whoami<span class="cursor"></span></div>
+      <h1 class="hero-title">Hi, I'm <span class="accent">Ronald Reoja</span>.</h1>
+      <div class="hero-role">
+        4th Year BSIT Student <span class="pipe">/</span> Front-End Developer <span class="pipe">/</span> React Developer
+      </div>
+      <p class="hero-desc">
+        I build responsive, user-friendly web applications and keep learning new tools to sharpen my craft.
+        I'm passionate about designing modern interfaces, solving real-world problems, and growing into a
+        professional software developer.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View My Projects</a>
+        <a class="btn btn-ghost" href="#" download>Download CV</a>
+        <a class="btn btn-ghost" href="#contact">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="line-label">01 — about.md</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a <strong>4th-year BSIT student</strong> with a strong interest in web development and modern
+            technologies. I enjoy building responsive websites using <strong>HTML, CSS, JavaScript, and React</strong>.
+          </p>
+          <p>
+            I believe learning never stops, so I keep improving my programming skills through personal projects
+            and hands-on practice. My goal is to become a professional software developer and contribute to
+            meaningful technology solutions.
+          </p>
+        </div>
+        <div class="stat-row">
+          <div class="stat"><div class="num">4th Yr</div><div class="label">BSIT Student</div></div>
+          <div class="stat"><div class="num">3+</div><div class="label">Projects Built</div></div>
+          <div class="stat"><div class="num">React</div><div class="label">Core Stack</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="line-label">02 — skills.json</div>
+      <div class="skills-json">
+        <div class="skills-row"><span class="punc">{</span></div>
+        <div class="skills-row">&nbsp;&nbsp;<span class="k">"frontend"</span><span class="punc">:</span>
+          <div class="tags">
+            <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript (ES6+)</span><span class="tag">React.js</span><span class="tag">Responsive Design</span>
+          </div>
+        </div>
+        <div class="skills-row">&nbsp;&nbsp;<span class="k">"programming"</span><span class="punc">:</span>
+          <div class="tags">
+            <span class="tag">Java</span><span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="skills-row">&nbsp;&nbsp;<span class="k">"database"</span><span class="punc">:</span>
+          <div class="tags"><span class="tag">MySQL</span></div>
+        </div>
+        <div class="skills-row">&nbsp;&nbsp;<span class="k">"tools"</span><span class="punc">:</span>
+          <div class="tags">
+            <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Canva</span><span class="tag">XAMPP</span>
+          </div>
+        </div>
+        <div class="skills-row"><span class="punc">}</span></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="line-label">03 — projects/</div>
+      <div class="project-list">
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3>Face Recognition Attendance System</h3>
+            <span class="project-path mono">/projects/attendance-system</span>
+          </div>
+          <p class="project-desc">
+            A face recognition-based attendance system that automatically identifies registered users and
+            records attendance in real time — deepened my understanding of computer vision and database-driven apps.
+          </p>
+          <div class="project-stack">
+            <span>Python</span><span>OpenCV</span><span>Face Recognition</span><span>MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#">GitHub ↗</a>
+            <a href="#">Live Demo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3>React Portfolio Website</h3>
+            <span class="project-path mono">/projects/portfolio</span>
+          </div>
+          <p class="project-desc">
+            A responsive portfolio website showcasing my skills, projects, and contact information, built with
+            modern front-end practices and a clean UI.
+          </p>
+          <div class="project-stack">
+            <span>React.js</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#">GitHub ↗</a>
+            <a href="#">Live Demo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3>Web Application Projects</h3>
+            <span class="project-path mono">/projects/web-apps</span>
+          </div>
+          <p class="project-desc">
+            Several responsive web applications built to strengthen front-end development, UI design, and
+            problem-solving skills.
+          </p>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#">GitHub ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Objective -->
+    <section id="objective">
+      <div class="line-label">04 — objective.txt</div>
+      <div class="objective-box">
+        Currently seeking internship, freelance, or entry-level opportunities where I can apply my technical
+        knowledge, gain industry experience, and continue growing as a software developer.
+      </div>
+      <div class="status-badges">
+        <span class="badge"><span class="pulse"></span>Open to internships</span>
+        <span class="badge"><span class="pulse"></span>Open to entry-level roles</span>
+        <span class="badge"><span class="pulse"></span>Open to freelance work</span>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="line-label">05 — contact.txt</div>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:reojaronald@email.com">
+          <div class="k">Email</div>
+          <div class="v">reojaronald@email.com</div>
+        </a>
+        <a class="contact-card" href="https://github.com/ITbulb27" target="_blank" rel="noopener">
+          <div class="k">GitHub</div>
+          <div class="v">github.com/ITbulb27</div>
+        </a>
+        <a class="contact-card" href="https://linkedin.com/in/reoja-ronald-7a7aaa423/" target="_blank" rel="noopener">
+          <div class="k">LinkedIn</div>
+          <div class="v">linkedin.com/in/reoja-ronald-7a7aaa423/</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- GitHub -->
+    <section id="github">
+      <div class="line-label">06 — github.txt</div>
+      <div class="github-grid">
+        <a class="github-card" href="https://github.com/ITbulb27" target="_blank" rel="noopener">
+          <div class="k">GitHub</div>
+          <div class="v">github.com/ITbulb27</div>
+        </a>
+      </div>
+    </section>
+
+    <div class="motto">
+      <span>//</span> "Every project is an opportunity to learn, improve, and create something meaningful."
+    </div>
+</html>
