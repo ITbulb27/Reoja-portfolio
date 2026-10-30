@@ -1,72 +1,66 @@
-# Ronald Reoja Portfolio
+# Ronald Reoja — Portfolio
 
-A modern personal portfolio website for Ronald Reoja, built as a responsive single-page portfolio with a developer-themed layout, project highlights, skills section, and contact information.
+A responsive, single-page portfolio for Ronald Reoja, a 4th-year BSIT student and front-end developer. The site presents a profile, skills, selected projects, career objective, and contact links in a developer-inspired interface.
 
-## Overview
+## Features
 
-This project showcases:
+- Responsive layout with desktop and mobile section navigation
+- About, skills, projects, career objective, and contact sections
+- Project previews linking to live demos
+- Downloadable portfolio PDF
+- Active section indicator while scrolling
+- Current year displayed automatically in the footer
 
-- Personal profile and introduction
-- Skills and technical stack
-- Featured project cards
-- Career objective and availability
-- Contact links and social profiles
-- Clean, responsive UI inspired by a coding/editor aesthetic
-
-## Tech Stack
+## Built With
 
 - HTML5
 - CSS3
-- JavaScript (ES6+)
-- Google Fonts
-- Git and GitHub
+- Vanilla JavaScript
+- Google Fonts: Inter and JetBrains Mono
 
-## Project Structure
-
-```text
-.
-├── index.html
-├── style.css
-├── script.js
-├── rj.jpg
-├── README.md
-└── assets/                  # if expanded later
-```
+The portfolio is a static website and does not require a package manager or build step.
 
 ## Run Locally
 
-You can view the site by opening `index.html` directly in a browser.
-
-For a local preview server, run:
+You can open `index.html` directly in a browser. To serve the site locally, run this command from the project directory:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open:
+Then visit [http://localhost:8000](http://localhost:8000).
+
+## Project Files
 
 ```text
-http://localhost:8000
+.
+├── index.html       # Portfolio page and content
+├── style.css        # Layout, styling, and responsive behavior
+├── script.js        # Navigation, scroll tracking, and footer year
+├── favicon.svg
+├── cv.pdf           # Downloadable portfolio PDF
+├── assets/
+│   └── images/
+│       ├── rj.jpg
+│       ├── Grove.png
+│       ├── Spotify.png
+│       ├── pexelicons.png
+│       ├── converter.png
+│       ├── 21Day.png
+│       ├── 21Days.png
+│       └── CV.jpg
+└── README.md
 ```
 
-## Customize the Portfolio
+## Customize
 
-Edit the following files to personalize the project:
-
-- `index.html` — name, bio, sections, project details, contact links
-- `style.css` — colors, typography, layout, spacing, responsiveness
-- `script.js` — interactive behaviors and dynamic elements
+- Update text, section content, project details, links, and image references in `index.html`.
+- Adjust colors, typography, layout, and breakpoints in `style.css`.
+- Update interactive behavior in `script.js`.
+- Replace images in `assets/images/` and `cv.pdf` with your own files, keeping their references in `index.html` up to date.
 
 ## Contact
 
-- Email: reojaronald@email.com
-- GitHub: https://github.com/ITbulb27
-- LinkedIn: https://linkedin.com/in/reoja-ronald-7a7aaa423/
-
-## About the Developer
-
-Ronald Reoja is a 4th-year BSIT student and front-end / React developer focused on building responsive, user-friendly web experiences and continuing to grow as a software developer.
-
-## License
-
-This project is for personal portfolio use.
+- Email: [reojaronald@email.com](mailto:reojaronald@email.com)
+- GitHub: [ITbulb27](https://github.com/ITbulb27)
+- LinkedIn: [Ronald Jhon Reoja](https://linkedin.com/in/reoja-ronald-7a7aaa423/)

@@ -3,8 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ronald Reoja — Front-End / React Developer</title>
-<meta name="description" content="Portfolio of Ronald Reoja, a 4th year BSIT student and front-end / React developer.">
+<title>Ronald Reoja | Front-End Developer &amp; BSIT Student</title>
+<meta name="description" content="Explore Ronald Reoja's portfolio of responsive web projects, front-end skills, and experience as a 4th-year BSIT student.">
+<meta name="theme-color" content="#0B0F14">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ronald Reoja | Front-End Developer &amp; BSIT Student">
+<meta property="og:description" content="Explore Ronald Reoja's portfolio of responsive web projects, front-end skills, and experience as a 4th-year BSIT student.">
+<meta property="og:image" content="https://raw.githubusercontent.com/ITbulb27/Reoja-portfolio/main/assets/images/rj.jpg">
+<meta property="og:image:alt" content="Ronald Reoja">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,7 +22,7 @@
 
 <div class="mobile-bar">
   <div class="id-card">
-    <div class="avatar"><img src="rj.jpg" alt="Ronald Reoja"></div>
+    <div class="avatar"><img src="assets/images/rj.jpg" alt="Ronald Reoja"></div>
     <div>
       <div class="name">RONALD REOJA</div>
     </div>
@@ -30,7 +38,7 @@
   <!-- Sidebar -->
   <aside class="sidebar">
     <div class="id-card">
-      <div class="avatar"><img src="rj.jpg" alt="Ronald Reoja"></div>
+      <div class="avatar"><img src="assets/images/rj.jpg" alt="Ronald Reoja"></div>
       <div>
         <div class="name">RONALD REOJA</div>
         <div class="role">front-end / react dev</div>
@@ -66,20 +74,39 @@
 
     <!-- Hero -->
     <section id="hero">
-      <div class="hero-kicker">$ whoami<span class="cursor"></span></div>
-      <h1 class="hero-title">Hi, I'm <span class="accent">Ronald Reoja</span>.</h1>
-      <div class="hero-role">
-        4th Year BSIT Student <span class="pipe">/</span> Front-End Developer <span class="pipe">/</span> React Developer
-      </div>
-      <p class="hero-desc">
-        I build responsive, user-friendly web applications and keep learning new tools to sharpen my craft.
-        I'm passionate about designing modern interfaces, solving real-world problems, and growing into a
-        professional software developer.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#projects">View My Projects</a>
-        <a class="btn btn-ghost" href="cv.pdf" target="_blank" rel="noopener noreferrer">Portfolio</a>
-        <a class="btn btn-ghost" href="#contact">Contact Me</a>
+      <div class="hero-layout">
+        <div class="hero-content">
+          <div class="hero-kicker">$ ITbulb<span class="cursor"></span></div>
+          <h1 class="hero-title">Hi, I'm <span class="accent">Ronald Reoja</span>.</h1>
+          <div class="hero-role">
+            4th Year BSIT Student <span class="pipe">/</span> Front-End Developer <span class="pipe">/</span> React Developer
+          </div>
+          <p class="hero-desc">
+            I build responsive, user-friendly web applications and keep learning new tools to sharpen my craft.
+            I'm passionate about designing modern interfaces, solving real-world problems, and growing into a
+            professional software developer.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View My Projects</a>
+            <a class="btn btn-ghost" href="cv.pdf" target="_blank" rel="noopener noreferrer">Portfolio</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <figure class="hero-portrait">
+          <div class="portrait-frame">
+            <img src="assets/images/rj.jpg" alt="Portrait of Ronald Reoja" fetchpriority="high">
+            <span class="portrait-corner portrait-corner-top" aria-hidden="true"></span>
+            <span class="portrait-corner portrait-corner-bottom" aria-hidden="true"></span>
+          </div>
+          <figcaption class="portrait-caption">
+            <span class="portrait-status" aria-hidden="true"></span>
+            <span class="portrait-info">
+              <strong>ITbulb27</strong>
+              <span>Front-End Developer</span>
+            </span>
+            <span class="portrait-mark mono" aria-hidden="true">&lt;/&gt;</span>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
@@ -240,12 +267,12 @@
               <span class="url mono">Grove.com</span>
             </div>
             <div class="shot">
-              <img src="Grove.png" alt="Project 1 preview" loading="lazy"
+              <img src="assets/images/Grove.png" alt="Project 1 preview" loading="lazy"
                    onerror="this.style.display='none'">
             </div>
           </a>
           <div class="web-body">
-            <h3>Project Name</h3>
+            <h3>GROVE</h3>
             <p>Brief description of what this website is and what it does.</p>
             <div class="project-stack">
               <span>HTML</span><span>CSS</span><span>JavaScript</span>
@@ -265,57 +292,57 @@
               <span class="url mono">Spotify.com</span>
             </div>
             <div class="shot">
-              <img src="Spotify.png" alt="Project 2 preview" loading="lazy"
+              <img src="assets/images/Spotify.png" alt="Project 2 preview" loading="lazy"
                    onerror="this.style.display='none'">
             </div>
           </a>
           <div class="web-body">
-            <h3>Project Two</h3>
+            <h3>Spotify</h3>
             <p>Brief description of what this website is and what it does.</p>
             <div class="project-stack">
               <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
             <div class="project-links">
               <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
-              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="https://github.com/ITbulb27" target="_blank" rel="noopener">GitHub ↗</a>
             </div>
           </div>
         </article>
 
         <!-- Websites -->
         <article class="web-card">
-          <a class="web-preview" href="https://itbulb27.github.io/Spotity/" target="_blank" rel="noopener">
+          <a class="web-preview" href="https://itbulb27.github.io/Pexelicons/" target="_blank" rel="noopener">
             <div class="browser-bar">
               <i></i><i></i><i></i>
               <span class="url mono">Pexelicons.com</span>
             </div>
             <div class="shot">
-              <img src=".png" alt="Project 2 preview" loading="lazy"
+              <img src="assets/images/pexelicons.png" alt="Project 2 preview" loading="lazy"
                    onerror="this.style.display='none'">
             </div>
           </a>
           <div class="web-body">
-            <h3>Project Two</h3>
-            <p>Brief description of what this website is and what it does.</p>
+            <h3>Pexelicons</h3>
+            <p>Brief description of what this website is and what it does.</p>  
             <div class="project-stack">
               <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
             <div class="project-links">
-              <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
-              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="https://itbulb27.github.io/Pexelicons/" target="_blank" rel="noopener">Live Demo ↗</a>
+              <a href="https://github.com/ITbulb27" target="_blank" rel="noopener">GitHub ↗</a>
             </div>
           </div>
         </article>
 
         <!-- Websites -->
         <article class="web-card">
-          <a class="web-preview" href="https://itbulb27.github.io/Spotity/" target="_blank" rel="noopener">
+          <a class="web-preview" href="https://itbulb27.github.io/converter/" target="_blank" rel="noopener">
             <div class="browser-bar">
               <i></i><i></i><i></i>
-              <span class="url mono">Pexelicons.com</span>
+              <span class="url mono">Converter.com</span>
             </div>
             <div class="shot">
-              <img src=".png" alt="Project 2 preview" loading="lazy"
+              <img src="assets/images/converter.png" alt="Project 2 preview" loading="lazy"
                    onerror="this.style.display='none'">
             </div>
           </a>
@@ -326,33 +353,33 @@
               <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
             <div class="project-links">
-              <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
-              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="https://itbulb27.github.io/converter/" target="_blank" rel="noopener">Live Demo ↗</a>
+              <a href="https://github.com/ITbulb27" target="_blank" rel="noopener">GitHub ↗</a>
             </div>
           </div>
         </article>
 
-         <!-- Websites -->
+         <!-- Website -->
         <article class="web-card">
-          <a class="web-preview" href="https://itbulb27.github.io/Spotity/" target="_blank" rel="noopener">
+          <a class="web-preview" href="https://itbulb27.github.io/Chalanges21/" target="_blank" rel="noopener">
             <div class="browser-bar">
               <i></i><i></i><i></i>
-              <span class="url mono">Pexelicons.com</span>
+              <span class="url mono">No Smoking</span>
             </div>
             <div class="shot">
-              <img src=".png" alt="Project 2 preview" loading="lazy"
+              <img src="assets/images/21Day.png" alt="21-day countdown graphic for the No Smoking Challenge" loading="lazy"
                    onerror="this.style.display='none'">
             </div>
           </a>
           <div class="web-body">
-            <h3>Project Two</h3>
-            <p>Brief description of what this website is and what it does.</p>
+            <h3>No Smoking Challenge</h3>
+            <p>A 21-day challenge website focused on supporting people who want to quit smoking.</p>
             <div class="project-stack">
               <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
             <div class="project-links">
-              <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
-              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="https://itbulb27.github.io/Chalanges21/" target="_blank" rel="noopener">Live Demo ↗</a>
+              <a href="https://github.com/ITbulb27" target="_blank" rel="noopener">GitHub ↗</a>
             </div>
           </div>
         </article>
@@ -376,7 +403,7 @@
   </main>
 </div>
 
-<footer>© <span id="year"></span> Ronald Reoja</footer>
+<footer>© <span id="year"></span> ITbulb </footer>
 
 <script src="script.js"></script>
 </body>

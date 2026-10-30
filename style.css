@@ -234,6 +234,96 @@ section:last-of-type{ border-bottom:none; }
 
 /* ---------- Hero ---------- */
 #hero{ padding-top:88px; }
+.hero-layout{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) 230px;
+  align-items:center;
+  gap:30px;
+}
+.hero-content{ min-width:0; }
+.hero-portrait{
+  position:relative;
+  width:100%;
+  max-width:230px;
+  justify-self:end;
+  padding:10px;
+  background:linear-gradient(145deg, rgba(242,184,75,.22), rgba(95,179,163,.12));
+  border:1px solid rgba(242,184,75,.35);
+  border-radius:14px;
+  box-shadow:0 20px 50px rgba(0,0,0,.28);
+}
+.portrait-frame{
+  position:relative;
+  aspect-ratio:4 / 5;
+  overflow:hidden;
+  border-radius:8px;
+  background:var(--surface-2);
+}
+.portrait-frame::after{
+  content:"";
+  position:absolute;
+  inset:45% 0 0;
+  background:linear-gradient(transparent, rgba(11,15,20,.36));
+  pointer-events:none;
+}
+.portrait-frame img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 28%;
+  transition:transform .35s ease;
+}
+.hero-portrait:hover .portrait-frame img{ transform:scale(1.035); }
+.portrait-corner{
+  position:absolute;
+  z-index:1;
+  width:20px;
+  height:20px;
+  border-color:var(--accent);
+  border-style:solid;
+}
+.portrait-corner-top{
+  top:10px;
+  left:10px;
+  border-width:1px 0 0 1px;
+}
+.portrait-corner-bottom{
+  right:10px;
+  bottom:10px;
+  border-width:0 1px 1px 0;
+}
+.portrait-caption{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:11px 2px 1px;
+}
+.portrait-status{
+  width:8px;
+  height:8px;
+  flex:none;
+  border-radius:50%;
+  background:var(--accent-2);
+  box-shadow:0 0 12px rgba(95,179,163,.55);
+}
+.portrait-info{
+  display:flex;
+  flex:1;
+  min-width:0;
+  flex-direction:column;
+  line-height:1.4;
+}
+.portrait-info strong{ font-size:12px; }
+.portrait-info span{
+  color:var(--text-faint);
+  font-family:var(--font-mono);
+  font-size:9px;
+  white-space:nowrap;
+}
+.portrait-mark{
+  color:var(--accent);
+  font-size:12px;
+}
 .hero-kicker{
   font-family:var(--font-mono);
   color:var(--accent-2);
@@ -557,6 +647,20 @@ footer{
   .motto{ margin:32px 20px 0; }
   footer{ padding:28px 20px 60px; }
   .stat-row{ grid-template-columns:repeat(3,1fr); gap:8px; }
+}
+
+@media (max-width:680px){
+  .hero-layout{
+    grid-template-columns:1fr;
+    justify-items:center;
+    gap:30px;
+  }
+  .hero-portrait{
+    grid-row:1;
+    justify-self:center;
+    width:min(230px, 72vw);
+  }
+  .hero-content{ width:100%; }
 }
 
 @media (max-width:480px){
